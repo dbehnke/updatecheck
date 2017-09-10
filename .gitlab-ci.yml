@@ -18,7 +18,6 @@ build:
     - GOOS=windows GOARCH=amd64 go build cmd/updatecheck/main.go; cp main updatecheck/updatecheck_windows_amd64
     - GOOS=darwin GOARCH=amd64 go build cmd/updatecheck/main.go; cp main updatecheck/updatecheck_darwin_amd64
     - cd updatecheck
-    - cp ../bin/* .
     - cp -R ../software .
   tags:
     - docker
