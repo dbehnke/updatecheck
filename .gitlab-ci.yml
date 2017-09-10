@@ -6,7 +6,7 @@ stages:
 build:
   stage: build
   script:
-    - export GOPATH=$PWD/go
+    - export GOPATH=/build/go
     - export SRC=$GOPATH/src/gitlab.com/dbehnke74/updatecheck
     - mkdir -p $SRC
     - export PATH=$GOPATH/bin:$PATH
