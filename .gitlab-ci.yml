@@ -1,0 +1,21 @@
+image: golang:latest
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - GOOS=linux GOARCH=amd64 make test
+    - mkdir updatecheck
+    - GOOS=linux GOARCH=amd64 go build cmd/updatecheck/main.go; cp main updatecheck/updatecheck_linux_amd64
+    - GOOS=windows GOARCH=amd64 go build cmd/updatecheck/main.go; cp main updatecheck/updatecheck_windows_amd64
+    - GOOS=osx GOARCH=amd64 go build cmd/updatecheck/main.go; cp main updatecheck/updatecheck_darwin_amd64
+    - cd updatecheck
+    - cp ../bin/* .
+    - cp -R ../software .
+  tags:
+    - docker
+  artifacts:
+    paths:
+     - updatecheck
