@@ -1,0 +1,61 @@
+version: 0
+
+software:
+  - name        : adobeflashplayer
+    displayname : Adobe Flash Player
+    description : Adobe Flash Player
+    platforms:
+    - name : mac
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: http://fpdownload2.macromedia.com/get/flashplayer/update/current/xml/version_en_mac_pl.xml 
+      - name: _current_version
+        method: rule_match
+        parameters:
+          rule: _body
+          match: \d{1,3},\d{1,3},\d{1,3},\d{1,3}
+      - name: current_version
+        method: rule_regexp_replace
+        parameters:
+          rule: _current_version
+          match: \,
+          repl: .
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: https://fpdownload.macromedia.com/get/flashplayer/pdc/VERSION/install_flash_player_osx.dmg
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
+    - name : windows
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: http://fpdownload2.macromedia.com/get/flashplayer/update/current/xml/version_en_win_pl.xml
+      - name: _current_version
+        method: rule_match
+        parameters:
+          rule: _body
+          match: \d{1,3},\d{1,3},\d{1,3},\d{1,3}
+      - name: current_version
+        method: rule_regexp_replace
+        parameters:
+          rule: _current_version
+          match: \,
+          repl: .
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: https://fpdownload.macromedia.com/get/flashplayer/pdc/VERSION/install_flash_player.exe
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version

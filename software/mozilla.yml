@@ -1,0 +1,83 @@
+version: 0
+
+software:
+  - name        : firefoxesr
+    displayname : Firefox ESR
+    description : Firefox Web Browser Extended Release
+    platforms:
+    - name : mac
+      rules:
+      - name: download_url
+        method: url_redirect
+        parameters:
+          url: https://download.mozilla.org/?product=firefox-esr-latest&os=osx&lang=en-US 
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: download_url
+          match: \d{1,3}\.\d{1,3}\.\d{1,3}
+    - name : windows
+      rules:
+      - name: download_url
+        method: url_redirect
+        parameters:
+          url: https://download.mozilla.org/?product=firefox-esr-latest&os=win&lang=en-US 
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: download_url
+          match: \d{1,3}\.\d{1,3}\.\d{1,3}
+
+  - name        : firefox
+    displayname : Firefox
+    description : Firefox Web Browser Current Release
+    platforms:
+    - name : mac
+      rules:
+      - name: download_url
+        method: url_redirect
+        parameters:
+          url: https://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US 
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: download_url
+          match: \d{1,3}\.\d{1,3}\.\d{1,3}
+    - name : windows
+      rules:
+      - name: download_url
+        method: url_redirect
+        parameters:
+          url: https://download.mozilla.org/?product=firefox-latest&os=win&lang=en-US 
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: download_url
+          match: \d{1,3}\.\d{1,3}\.\d{1,3}
+
+  - name        : thunderbird
+    displayname : Thunderbird
+    description : Thunderbird Email
+    platforms:
+    - name : mac
+      rules:
+      - name: download_url
+        method: url_redirect
+        parameters:
+          url: https://download.mozilla.org/?product=thunderbird-latest&os=osx&lang=en-US 
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: download_url
+          match: \d{1,3}\.\d{1,3}\.\d{1,3}
+    - name : windows
+      rules:
+      - name: download_url
+        method: url_redirect
+        parameters:
+          url: https://download.mozilla.org/?product=thunderbird-latest&os=win&lang=en-US 
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: download_url
+          match: \d{1,3}\.\d{1,3}\.\d{1,3}
