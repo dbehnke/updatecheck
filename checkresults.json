@@ -1,0 +1,78 @@
+{
+  "adobeflashplayer": {
+    "mac": {
+      "current_version": "26.0.0.151",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/26.0.0.151/install_flash_player_osx.dmg"
+    },
+    "windows": {
+      "current_version": "26.0.0.151",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/26.0.0.151/install_flash_player.exe"
+    }
+  },
+  "firefox": {
+    "mac": {
+      "current_version": "55.0.3",
+      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/55.0.3/mac/en-US/Firefox%2055.0.3.dmg"
+    },
+    "windows": {
+      "current_version": "55.0.3",
+      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/55.0.3/win32/en-US/Firefox%20Setup%2055.0.3.exe"
+    }
+  },
+  "firefoxesr": {
+    "mac": {
+      "current_version": "52.3.0",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.3.0esr/mac/en-US/Firefox%2052.3.0esr.dmg"
+    },
+    "windows": {
+      "current_version": "52.3.0",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.3.0esr/win32/en-US/Firefox%20Setup%2052.3.0esr.exe"
+    }
+  },
+  "libreoffice": {
+    "mac": {
+      "current_version": "5.4.1",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.1/mac/x86_64/LibreOffice_5.4.1_MacOS_x86-64.dmg"
+    },
+    "windows": {
+      "current_version": "5.4.1",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.1/win/x86_64/LibreOffice_5.4.1_Win_x64.msi"
+    }
+  },
+  "libreoffice-enterprise": {
+    "mac": {
+      "current_version": "5.3.6",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.3.6/mac/x86_64/LibreOffice_5.3.6_MacOS_x86-64.dmg"
+    },
+    "windows": {
+      "current_version": "5.3.6",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.3.6/win/x86_64/LibreOffice_5.3.6_Win_x64.msi"
+    }
+  },
+  "microsoftoffice2016": {
+    "mac": {
+      "current_version": "15.37.0 [170815]",
+      "download_url": "https://go.microsoft.com/fwlink/?linkid=525133"
+    }
+  },
+  "oraclejavajdk": {
+    "mac": {
+      "current_version": "8u144-b01",
+      "download_url": "http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-macosx-x64.dmg"
+    },
+    "windows": {
+      "current_version": "8u144-b01",
+      "download_url": "http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-windows-x64.exe"
+    }
+  },
+  "thunderbird": {
+    "mac": {
+      "current_version": "52.3.0",
+      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.3.0/mac/en-US/Thunderbird%2052.3.0.dmg"
+    },
+    "windows": {
+      "current_version": "52.3.0",
+      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.3.0/win32/en-US/Thunderbird%20Setup%2052.3.0.exe"
+    }
+  }
+}
