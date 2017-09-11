@@ -13,6 +13,7 @@ properties(
 stage('check') {
   node('docker') {
     docker.image('golang:latest').inside {
+      checkout scm
       timeout(time: 240, unit: 'SECONDS') {
         sh "./check.sh"
       }
