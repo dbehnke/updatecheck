@@ -1,0 +1,116 @@
+version: 0
+
+software:
+  - name        : libreoffice
+    displayname : LibreOffice
+    description : LibreOffice
+    platforms:
+    - name : mac
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: http://www.libreoffice.org/download/download/ 
+      - name: _enthusiast
+        method: rule_match
+        parameters:
+          rule: _body
+          match: dl_version_number.*\n.*dl_description_text.*enthusiast
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _enthusiast
+          match: \d{1,3}.\d{1,3}.\d{1,3}
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: http://download.documentfoundation.org/libreoffice/stable/VERSION/mac/x86_64/LibreOffice_VERSION_MacOS_x86-64.dmg
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
+    - name : windows
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: http://www.libreoffice.org/download/download/ 
+      - name: _enthusiast
+        method: rule_match
+        parameters:
+          rule: _body
+          match: dl_version_number.*\n.*dl_description_text.*enthusiast
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _enthusiast
+          match: \d{1,3}.\d{1,3}.\d{1,3}
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: http://download.documentfoundation.org/libreoffice/stable/VERSION/win/x86_64/LibreOffice_VERSION_Win_x64.msi
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
+
+  - name        : libreoffice-enterprise
+    displayname : LibreOffice
+    description : LibreOffice
+    platforms:
+    - name : mac
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: http://www.libreoffice.org/download/download/ 
+      - name: _enterprise
+        method: rule_match
+        parameters:
+          rule: _body
+          match: dl_version_number.*\n.*dl_description_text.*enterprise
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _enterprise
+          match: \d{1,3}.\d{1,3}.\d{1,3}
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: http://download.documentfoundation.org/libreoffice/stable/VERSION/mac/x86_64/LibreOffice_VERSION_MacOS_x86-64.dmg
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
+    - name : windows
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: http://www.libreoffice.org/download/download/ 
+      - name: _enterprise
+        method: rule_match
+        parameters:
+          rule: _body
+          match: dl_version_number.*\n.*dl_description_text.*enterprise
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _enterprise
+          match: \d{1,3}.\d{1,3}.\d{1,3}
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: http://download.documentfoundation.org/libreoffice/stable/VERSION/win/x86_64/LibreOffice_VERSION_Win_x64.msi
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
