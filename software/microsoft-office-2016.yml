@@ -1,7 +1,7 @@
 version: 0
 
 software:
-  - name        : micrsoftoffice2016
+  - name        : microsoftoffice2016
     displayname : Microsoft Office 2016 (Production)
     description : Microsoft Office 2016 (Production Channel)
     platforms:

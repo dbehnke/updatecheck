@@ -1,12 +1,12 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"os"
 
 	"gitlab.com/dbehnke74/updatecheck"
-	yaml "gopkg.in/yaml.v2"
 )
 
 func main() {
@@ -14,8 +14,8 @@ func main() {
 		fmt.Printf(`%s checks for software updates
 
 results		  
-  %s results [dir or single file (default: ./software)] [output file (default: lastresults.yml)]
-  Scans all the software in yaml files and outputs to a results yaml file
+  %s results [dir or single file (default: ./software)] [output file (default: results.json)]
+  Scans all the software in yaml files and outputs to a results json file
 
 `, os.Args[0], os.Args[0])
 		os.Exit(0)
@@ -27,7 +27,7 @@ results
 			if len(os.Args) >= 3 {
 				dir = os.Args[2]
 			}
-			outputfile := "lastresults.yml"
+			outputfile := "results.json"
 			if len(os.Args) >= 4 {
 				outputfile = os.Args[3]
 			}
@@ -36,12 +36,12 @@ results
 				fmt.Println("GetSoftwareFilesResult error: ", err)
 				os.Exit(1)
 			}
-			yamlbytes, err := yaml.Marshal(results)
+			jsonbytes, err := json.MarshalIndent(results, "", "  ")
 			if err != nil {
-				fmt.Println("YAML marshall error: ", err)
+				fmt.Println("JSON marshall error: ", err)
 				os.Exit(1)
 			}
-			err = ioutil.WriteFile(outputfile, yamlbytes, 0644)
+			err = ioutil.WriteFile(outputfile, jsonbytes, 0644)
 			if err != nil {
 				fmt.Printf("Writing %s: %s\n", outputfile, err)
 			}
