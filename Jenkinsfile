@@ -2,12 +2,13 @@
 properties(
     [
         [
-            $class: 'builddiscarderproperty',
-            strategy: [$class: 'logrotator', numtokeepstr: '10']
+            $class: 'BuildDiscarderProperty',
+            strategy: [$class: 'LogRotator', numToKeepStr: '100']
         ],
-        pipelinetriggers([cron('H 13-21 * * 1-5')]),
+        pipelineTriggers([cron('H 13-21 * * 1-5')]),
     ]
 )
+
 
 stage('check') {
   node('docker') {
@@ -18,3 +19,4 @@ stage('check') {
     }
   }
 }
+
