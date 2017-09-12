@@ -1,12 +1,12 @@
 {
   "adobeflashplayer": {
     "mac": {
-      "current_version": "26.0.0.151",
-      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/26.0.0.151/install_flash_player_osx.dmg"
+      "current_version": "27.0.0.130",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.130/install_flash_player_osx.dmg"
     },
     "windows": {
-      "current_version": "26.0.0.151",
-      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/26.0.0.151/install_flash_player.exe"
+      "current_version": "27.0.0.130",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.130/install_flash_player.exe"
     }
   },
   "firefox": {
