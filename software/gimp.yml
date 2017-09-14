@@ -1,0 +1,81 @@
+version: 0
+
+software:
+  - name        : gimp
+    displayname : GIMP
+    description : GNU Image Manipulation Program
+    platforms:
+    - name : mac
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: https://www.gimp.org/downloads
+      - name: _firstpass
+        method: rule_match
+        parameters:
+          rule: _body
+          match: The current stable release of GIMP is.*<\/b>
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _firstpass
+          match: \d{1,3}.\d{1,3}.\d{1,3}
+      - name: _major_version
+        method: rule_match
+        parameters:
+          rule: _firstpass
+          match: \d{1,3}.\d{1,3}
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: https://download.gimp.org/mirror/pub/gimp/vMAJOR/osx/gimp-VERSION-x86_64.dmg
+      - name: _download_url2
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url2
+          match: MAJOR
+          repl_rule: _major_version
+    - name : windows
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: https://www.gimp.org/downloads
+      - name: _firstpass
+        method: rule_match
+        parameters:
+          rule: _body
+          match: The current stable release of GIMP is.*<\/b>
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _firstpass
+          match: \d{1,3}.\d{1,3}.\d{1,3}
+      - name: _major_version
+        method: rule_match
+        parameters:
+          rule: _firstpass
+          match: \d{1,3}.\d{1,3}
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: https://download.gimp.org/mirror/pub/gimp/vMAJOR/windows/gimp-VERSION-setup.exe
+      - name: _download_url2
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url2
+          match: MAJOR
+          repl_rule: _major_version

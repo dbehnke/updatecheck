@@ -29,6 +29,16 @@
       "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.3.0esr/win32/en-US/Firefox%20Setup%2052.3.0esr.exe"
     }
   },
+  "gimp": {
+    "mac": {
+      "current_version": "2.8.22",
+      "download_url": "https://download.gimp.org/mirror/pub/gimp/v2.8/osx/gimp-2.8.22-x86_64.dmg"
+    },
+    "windows": {
+      "current_version": "2.8.22",
+      "download_url": "https://download.gimp.org/mirror/pub/gimp/v2.8/windows/gimp-2.8.22-setup.exe"
+    }
+  },
   "libreoffice": {
     "mac": {
       "current_version": "5.4.1",
@@ -73,6 +83,16 @@
     "windows": {
       "current_version": "52.3.0",
       "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.3.0/win32/en-US/Thunderbird%20Setup%2052.3.0.exe"
+    }
+  },
+  "virtualbox": {
+    "mac": {
+      "current_version": "5.1.26",
+      "download_url": "http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-OSX.dmg"
+    },
+    "windows": {
+      "current_version": "5.1.26",
+      "download_url": "http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe"
     }
   }
 }
