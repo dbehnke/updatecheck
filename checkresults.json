@@ -11,12 +11,12 @@
   },
   "firefox": {
     "mac": {
-      "current_version": "56.0",
-      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/56.0/mac/en-US/Firefox%2056.0.dmg"
+      "current_version": "56.0.1",
+      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/56.0.1/mac/en-US/Firefox%2056.0.1.dmg"
     },
     "windows": {
-      "current_version": "56.0",
-      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/56.0/win32/en-US/Firefox%20Setup%2056.0.exe"
+      "current_version": "56.0.1",
+      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/56.0.1/win32/en-US/Firefox%20Setup%2056.0.1.exe"
     }
   },
   "firefoxesr": {
@@ -77,12 +77,12 @@
   },
   "thunderbird": {
     "mac": {
-      "current_version": "52.3.0",
-      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.3.0/mac/en-US/Thunderbird%2052.3.0.dmg"
+      "current_version": "52.4.0",
+      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.4.0/mac/en-US/Thunderbird%2052.4.0.dmg"
     },
     "windows": {
-      "current_version": "52.3.0",
-      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.3.0/win32/en-US/Thunderbird%20Setup%2052.3.0.exe"
+      "current_version": "52.4.0",
+      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.4.0/win32/en-US/Thunderbird%20Setup%2052.4.0.exe"
     }
   },
   "virtualbox": {
