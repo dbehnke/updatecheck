@@ -1,12 +1,12 @@
 {
   "adobeflashplayer": {
     "mac": {
-      "current_version": "27.0.0.130",
-      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.130/install_flash_player_osx.dmg"
+      "current_version": "27.0.0.159",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.159/install_flash_player_osx.dmg"
     },
     "windows": {
-      "current_version": "27.0.0.130",
-      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.130/install_flash_player.exe"
+      "current_version": "27.0.0.159",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.159/install_flash_player.exe"
     }
   },
   "firefox": {
@@ -21,12 +21,12 @@
   },
   "firefoxesr": {
     "mac": {
-      "current_version": "52.4.0",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.4.0esr/mac/en-US/Firefox%2052.4.0esr.dmg"
+      "current_version": "52.4.1",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.4.1esr/mac/en-US/Firefox%2052.4.1esr.dmg"
     },
     "windows": {
-      "current_version": "52.4.0",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.4.0esr/win32/en-US/Firefox%20Setup%2052.4.0esr.exe"
+      "current_version": "52.4.1",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.4.1esr/win32/en-US/Firefox%20Setup%2052.4.1esr.exe"
     }
   },
   "gimp": {
