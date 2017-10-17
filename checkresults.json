@@ -1,12 +1,12 @@
 {
   "adobeflashplayer": {
     "mac": {
-      "current_version": "27.0.0.159",
-      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.159/install_flash_player_osx.dmg"
+      "current_version": "27.0.0.170",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.170/install_flash_player_osx.dmg"
     },
     "windows": {
-      "current_version": "27.0.0.159",
-      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.159/install_flash_player.exe"
+      "current_version": "27.0.0.170",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/27.0.0.170/install_flash_player.exe"
     }
   },
   "firefox": {
@@ -67,12 +67,12 @@
   },
   "oraclejavajdk": {
     "mac": {
-      "current_version": "8u144-b01",
-      "download_url": "http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-macosx-x64.dmg"
+      "current_version": "8u151-b12",
+      "download_url": "http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-macosx-x64.dmg"
     },
     "windows": {
-      "current_version": "8u144-b01",
-      "download_url": "http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-windows-x64.exe"
+      "current_version": "8u151-b12",
+      "download_url": "http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-windows-x64.exe"
     }
   },
   "thunderbird": {
@@ -87,12 +87,12 @@
   },
   "virtualbox": {
     "mac": {
-      "current_version": "5.1.28",
-      "download_url": "http://download.virtualbox.org/virtualbox/5.1.28/VirtualBox-5.1.28-117968-OSX.dmg"
+      "current_version": "5.1.30",
+      "download_url": "http://download.virtualbox.org/virtualbox/5.1.30/VirtualBox-5.1.30-118389-OSX.dmg"
     },
     "windows": {
-      "current_version": "5.1.28",
-      "download_url": "http://download.virtualbox.org/virtualbox/5.1.28/VirtualBox-5.1.28-117968-Win.exe"
+      "current_version": "5.1.30",
+      "download_url": "http://download.virtualbox.org/virtualbox/5.1.30/VirtualBox-5.1.30-118389-Win.exe"
     }
   }
 }
