@@ -7,5 +7,6 @@ mkdir -p $PROJECTPATH || true
 cp -R * $PROJECTPATH
 go build cmd/updatecheck/main.go
 ./main results
-diff -c1 checkresults.json results.json
+diff -c1 checkresults.json results.json || \
+  diff -C 1 checkresults.json results.json
 
