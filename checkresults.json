@@ -11,22 +11,22 @@
   },
   "firefox": {
     "mac": {
-      "current_version": "57.0.4",
-      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/57.0.4/mac/en-US/Firefox%2057.0.4.dmg"
+      "current_version": "58.0",
+      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/58.0/mac/en-US/Firefox%2058.0.dmg"
     },
     "windows": {
-      "current_version": "57.0.4",
-      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/57.0.4/win32/en-US/Firefox%20Setup%2057.0.4.exe"
+      "current_version": "58.0",
+      "download_url": "http://download.cdn.mozilla.net/pub/firefox/releases/58.0/win32/en-US/Firefox%20Setup%2058.0.exe"
     }
   },
   "firefoxesr": {
     "mac": {
-      "current_version": "52.5.3",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.5.3esr/mac/en-US/Firefox%2052.5.3esr.dmg"
+      "current_version": "52.6.0",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.6.0esr/mac/en-US/Firefox%2052.6.0esr.dmg"
     },
     "windows": {
-      "current_version": "52.5.3",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.5.3esr/win32/en-US/Firefox%20Setup%2052.5.3esr.exe"
+      "current_version": "52.6.0",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.6.0esr/win32/en-US/Firefox%20Setup%2052.6.0esr.exe"
     }
   },
   "gimp": {
