@@ -77,12 +77,12 @@
   },
   "thunderbird": {
     "mac": {
-      "current_version": "52.5.2",
-      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.5.2/mac/en-US/Thunderbird%2052.5.2.dmg"
+      "current_version": "52.6.0",
+      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.6.0/mac/en-US/Thunderbird%2052.6.0.dmg"
     },
     "windows": {
-      "current_version": "52.5.2",
-      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.5.2/win32/en-US/Thunderbird%20Setup%2052.5.2.exe"
+      "current_version": "52.6.0",
+      "download_url": "http://download.cdn.mozilla.net/pub/thunderbird/releases/52.6.0/win32/en-US/Thunderbird%20Setup%2052.6.0.exe"
     }
   },
   "virtualbox": {
