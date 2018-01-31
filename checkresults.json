@@ -41,22 +41,22 @@
   },
   "libreoffice": {
     "mac": {
+      "current_version": "6.0.0",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/6.0.0/mac/x86_64/LibreOffice_6.0.0_MacOS_x86-64.dmg"
+    },
+    "windows": {
+      "current_version": "6.0.0",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/6.0.0/win/x86_64/LibreOffice_6.0.0_Win_x64.msi"
+    }
+  },
+  "libreoffice-enterprise": {
+    "mac": {
       "current_version": "5.4.4",
       "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.4/mac/x86_64/LibreOffice_5.4.4_MacOS_x86-64.dmg"
     },
     "windows": {
       "current_version": "5.4.4",
       "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.4/win/x86_64/LibreOffice_5.4.4_Win_x64.msi"
-    }
-  },
-  "libreoffice-enterprise": {
-    "mac": {
-      "current_version": "5.3.7",
-      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.3.7/mac/x86_64/LibreOffice_5.3.7_MacOS_x86-64.dmg"
-    },
-    "windows": {
-      "current_version": "5.3.7",
-      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.3.7/win/x86_64/LibreOffice_5.3.7_Win_x64.msi"
     }
   },
   "microsoftoffice2016": {
