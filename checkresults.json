@@ -51,12 +51,12 @@
   },
   "libreoffice-enterprise": {
     "mac": {
-      "current_version": "5.4.4",
-      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.4/mac/x86_64/LibreOffice_5.4.4_MacOS_x86-64.dmg"
+      "current_version": "5.4.5",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.5/mac/x86_64/LibreOffice_5.4.5_MacOS_x86-64.dmg"
     },
     "windows": {
-      "current_version": "5.4.4",
-      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.4/win/x86_64/LibreOffice_5.4.4_Win_x64.msi"
+      "current_version": "5.4.5",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.5/win/x86_64/LibreOffice_5.4.5_Win_x64.msi"
     }
   },
   "microsoftoffice2016": {
