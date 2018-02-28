@@ -87,12 +87,12 @@
   },
   "virtualbox": {
     "mac": {
-      "current_version": "5.2.6",
-      "download_url": "https://download.virtualbox.org/virtualbox/5.2.6/VirtualBox-5.2.6-120293-OSX.dmg"
+      "current_version": "5.2.8",
+      "download_url": "https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-OSX.dmg"
     },
     "windows": {
-      "current_version": "5.2.6",
-      "download_url": "https://download.virtualbox.org/virtualbox/5.2.6/VirtualBox-5.2.6-120293-Win.exe"
+      "current_version": "5.2.8",
+      "download_url": "https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-Win.exe"
     }
   }
 }
