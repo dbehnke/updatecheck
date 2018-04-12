@@ -1,32 +1,32 @@
 {
   "adobeflashplayer": {
     "mac": {
-      "current_version": "29.0.0.113",
-      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/29.0.0.113/install_flash_player_osx.dmg"
+      "current_version": "29.0.0.140",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/29.0.0.140/install_flash_player_osx.dmg"
     },
     "windows": {
-      "current_version": "29.0.0.113",
-      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/29.0.0.113/install_flash_player.exe"
+      "current_version": "29.0.0.140",
+      "download_url": "https://fpdownload.macromedia.com/get/flashplayer/pdc/29.0.0.140/install_flash_player.exe"
     }
   },
   "firefox": {
     "mac": {
-      "current_version": "59.0.1",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/59.0.1/mac/en-US/Firefox%2059.0.1.dmg"
+      "current_version": "59.0.2",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/59.0.2/mac/en-US/Firefox%2059.0.2.dmg"
     },
     "windows": {
-      "current_version": "59.0.1",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/59.0.1/win32/en-US/Firefox%20Setup%2059.0.1.exe"
+      "current_version": "59.0.2",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/59.0.2/win32/en-US/Firefox%20Setup%2059.0.2.exe"
     }
   },
   "firefoxesr": {
     "mac": {
-      "current_version": "52.7.2",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.7.2esr/mac/en-US/Firefox%2052.7.2esr.dmg"
+      "current_version": "52.7.3",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.7.3esr/mac/en-US/Firefox%2052.7.3esr.dmg"
     },
     "windows": {
-      "current_version": "52.7.2",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.7.2esr/win32/en-US/Firefox%20Setup%2052.7.2esr.exe"
+      "current_version": "52.7.3",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.7.3esr/win32/en-US/Firefox%20Setup%2052.7.3esr.exe"
     }
   },
   "gimp": {
@@ -41,22 +41,22 @@
   },
   "libreoffice": {
     "mac": {
-      "current_version": "6.0.2",
-      "download_url": "http://download.documentfoundation.org/libreoffice/stable/6.0.2/mac/x86_64/LibreOffice_6.0.2_MacOS_x86-64.dmg"
+      "current_version": "6.0.3",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/6.0.3/mac/x86_64/LibreOffice_6.0.3_MacOS_x86-64.dmg"
     },
     "windows": {
-      "current_version": "6.0.2",
-      "download_url": "http://download.documentfoundation.org/libreoffice/stable/6.0.2/win/x86_64/LibreOffice_6.0.2_Win_x64.msi"
+      "current_version": "6.0.3",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/6.0.3/win/x86_64/LibreOffice_6.0.3_Win_x64.msi"
     }
   },
   "libreoffice-enterprise": {
     "mac": {
-      "current_version": "5.4.5",
-      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.5/mac/x86_64/LibreOffice_5.4.5_MacOS_x86-64.dmg"
+      "current_version": "5.4.6",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.6/mac/x86_64/LibreOffice_5.4.6_MacOS_x86-64.dmg"
     },
     "windows": {
-      "current_version": "5.4.5",
-      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.5/win/x86_64/LibreOffice_5.4.5_Win_x64.msi"
+      "current_version": "5.4.6",
+      "download_url": "http://download.documentfoundation.org/libreoffice/stable/5.4.6/win/x86_64/LibreOffice_5.4.6_Win_x64.msi"
     }
   },
   "microsoftoffice2016": {
@@ -77,12 +77,12 @@
   },
   "thunderbird": {
     "mac": {
-      "current_version": "52.6.0",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/52.6.0/mac/en-US/Thunderbird%2052.6.0.dmg"
+      "current_version": "52.7.0",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/52.7.0/mac/en-US/Thunderbird%2052.7.0.dmg"
     },
     "windows": {
-      "current_version": "52.6.0",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/52.6.0/win32/en-US/Thunderbird%20Setup%2052.6.0.exe"
+      "current_version": "52.7.0",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/52.7.0/win32/en-US/Thunderbird%20Setup%2052.7.0.exe"
     }
   },
   "virtualbox": {
