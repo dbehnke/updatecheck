@@ -31,12 +31,12 @@
   },
   "gimp": {
     "mac": {
-      "current_version": "2.10.0",
-      "download_url": "https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.0-x86_64.dmg"
+      "current_version": "2.10.2",
+      "download_url": "https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.2-x86_64.dmg"
     },
     "windows": {
-      "current_version": "2.10.0",
-      "download_url": "https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.0-setup.exe"
+      "current_version": "2.10.2",
+      "download_url": "https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.2-setup.exe"
     }
   },
   "libreoffice": {
@@ -77,12 +77,12 @@
   },
   "thunderbird": {
     "mac": {
-      "current_version": "52.7.0",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/52.7.0/mac/en-US/Thunderbird%2052.7.0.dmg"
+      "current_version": "52.8.0",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/mac/en-US/Thunderbird%2052.8.0.dmg"
     },
     "windows": {
-      "current_version": "52.7.0",
-      "download_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/52.7.0/win32/en-US/Thunderbird%20Setup%2052.7.0.exe"
+      "current_version": "52.8.0",
+      "download_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/win32/en-US/Thunderbird%20Setup%2052.8.0.exe"
     }
   },
   "virtualbox": {
