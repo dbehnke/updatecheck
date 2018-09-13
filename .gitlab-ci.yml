@@ -15,12 +15,19 @@ build:
     - cp -R ../definitions .
     - ./updatecheck_linux_amd64 results ./definitions
     - ./updatecheck_linux_amd64 query results.json firefoxesr mac current_version
+    - ./updatecheck_linux_amd64 query results.json firefoxesr mac download_url
     - ./updatecheck_linux_amd64 query results.json thunderbird mac current_version
+    - ./updatecheck_linux_amd64 query results.json thunderbird mac download_url
     - ./updatecheck_linux_amd64 query results.json virtualbox mac current_version
+    - ./updatecheck_linux_amd64 query results.json virtualbox mac download_url
     - ./updatecheck_linux_amd64 query results.json oraclejavajdk mac current_version
+    - ./updatecheck_linux_amd64 query results.json oraclejavajdk mac download_url
     - ./updatecheck_linux_amd64 query results.json libreoffice-enterprise mac current_version
+    - ./updatecheck_linux_amd64 query results.json libreoffice-enterprise mac download_url
     - ./updatecheck_linux_amd64 query results.json gimp mac current_version
+    - ./updatecheck_linux_amd64 query results.json gimp mac download_url
     - ./updatecheck_linux_amd64 query results.json adobeflashplayer mac current_version
+    - ./updatecheck_linux_amd64 query results.json adobeflashplayer mac download_url
 
   tags:
     - docker
