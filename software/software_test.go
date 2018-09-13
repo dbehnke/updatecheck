@@ -1,4 +1,4 @@
-package updatecheck
+package software
 
 import (
 	"testing"
@@ -38,7 +38,7 @@ func TestCoreFunctions(t *testing.T) {
 
 func TestYAML(t *testing.T) {
 	Convey("YAML can be marshaled from a file", t, func() {
-		software, err := SoftwareFromYAMLFile("./software/mozilla.yml")
+		software, err := SoftwareFromYAMLFile("../definitions/mozilla.yml")
 		So(err, ShouldBeNil)
 		So(software, ShouldNotBeEmpty)
 	})
@@ -46,7 +46,7 @@ func TestYAML(t *testing.T) {
 
 func TestGetRuleResults(t *testing.T) {
 	Convey("Rule Results are working", t, func() {
-		software, err := SoftwareFromYAMLFile("./software/mozilla.yml")
+		software, err := SoftwareFromYAMLFile("../definitions/mozilla.yml")
 		So(err, ShouldBeNil)
 		So(software, ShouldNotBeEmpty)
 		s := software[0]
@@ -64,7 +64,7 @@ func TestGetRuleResults(t *testing.T) {
 
 func TestGetPlatformResults(t *testing.T) {
 	Convey("Rule Results are working", t, func() {
-		software, err := SoftwareFromYAMLFile("./software/mozilla.yml")
+		software, err := SoftwareFromYAMLFile("../definitions/mozilla.yml")
 		So(err, ShouldBeNil)
 		So(software, ShouldNotBeEmpty)
 		s := software[0]
@@ -85,7 +85,7 @@ func TestGetPlatformResults(t *testing.T) {
 
 func TestGetSoftwareResults(t *testing.T) {
 	Convey("Rule Results are working", t, func() {
-		software, err := SoftwareFromYAMLFile("./software/mozilla.yml")
+		software, err := SoftwareFromYAMLFile("../definitions/mozilla.yml")
 		So(err, ShouldBeNil)
 		So(software, ShouldNotBeEmpty)
 		results, err := GetSoftwareResults(software)
@@ -99,13 +99,13 @@ func TestGetSoftwareResults(t *testing.T) {
 
 func TestGetSoftwareFiles(t *testing.T) {
 	Convey("GetSoftwareFiles can get a list of files from a directory", t, func() {
-		files, err := GetSoftwareFiles("./software")
+		files, err := GetSoftwareFiles("../definitions")
 		So(err, ShouldBeNil)
 		So(files, ShouldNotBeEmpty)
 	})
 
 	Convey("GetSoftwareFiles can get a single file", t, func() {
-		files, err := GetSoftwareFiles("./software/mozilla.yml")
+		files, err := GetSoftwareFiles("../definitions/mozilla.yml")
 		So(err, ShouldBeNil)
 		So(files, ShouldNotBeEmpty)
 		So(files[0], ShouldEqual, "mozilla.yml")
@@ -114,13 +114,13 @@ func TestGetSoftwareFiles(t *testing.T) {
 
 func TestGetSoftwareFilesResult(t *testing.T) {
 	Convey("GetSoftwareFilesResult can get results from a directory of files", t, func() {
-		results, err := GetSoftwareFilesResult("./software")
+		results, err := GetSoftwareFilesResult("../definitions")
 		So(err, ShouldBeNil)
 		So(results, ShouldNotBeEmpty)
 		So(results, ShouldContainKey, "firefoxesr")
 	})
 	Convey("GetSoftwareFilesResult can get results from a single file", t, func() {
-		results, err := GetSoftwareFilesResult("./software/mozilla.yml")
+		results, err := GetSoftwareFilesResult("../definitions/mozilla.yml")
 		So(err, ShouldBeNil)
 		So(results, ShouldNotBeEmpty)
 		So(results, ShouldContainKey, "firefoxesr")
@@ -129,7 +129,7 @@ func TestGetSoftwareFilesResult(t *testing.T) {
 
 func TestStaticStringAndRegExpReplace(t *testing.T) {
 	Convey("Set Static String and Do a RegExpReplace", t, func() {
-		results, err := GetSoftwareFilesResult("./software/adobe.yml")
+		results, err := GetSoftwareFilesResult("../definitions/adobe.yml")
 		So(err, ShouldBeNil)
 		So(results, ShouldNotBeEmpty)
 		So(results, ShouldContainKey, "adobeflashplayer")

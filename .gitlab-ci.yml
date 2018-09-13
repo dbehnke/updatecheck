@@ -6,19 +6,13 @@ stages:
 build:
   stage: build
   script:
-    - export GOPATH=/build/go
-    - export SRC=$GOPATH/src/gitlab.com/dbehnke74/updatecheck
-    - mkdir -p $SRC
-    - export PATH=$GOPATH/bin:$PATH
-    - cp -R * $SRC
-    - cd $SRC
-    - GOOS=linux GOARCH=amd64 go test
+    - GOOS=linux GOARCH=amd64 go test gitlab.com/dbehnke74/updatecheck/software
     - mkdir updatecheck
-    - GOOS=linux GOARCH=amd64 go build cmd/updatecheck/main.go; cp main updatecheck/updatecheck_linux_amd64
-    - GOOS=windows GOARCH=amd64 go build cmd/updatecheck/main.go; cp main updatecheck/updatecheck_windows_amd64
-    - GOOS=darwin GOARCH=amd64 go build cmd/updatecheck/main.go; cp main updatecheck/updatecheck_darwin_amd64
+    - GOOS=linux GOARCH=amd64 go build -mod vendor; cp updatecheck updatecheck/updatecheck_linux_amd64
+    - GOOS=windows GOARCH=amd64 go build -mod vendor; cp updatecheck updatecheck/updatecheck_windows_amd64
+    - GOOS=darwin GOARCH=amd64 go build -mod vendor; cp updatecheck updatecheck/updatecheck_darwin_amd64
     - cd updatecheck
-    - cp -R ../software .
+    - cp -R ../definitions .
   tags:
     - docker
   artifacts:

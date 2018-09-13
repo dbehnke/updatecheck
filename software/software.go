@@ -1,4 +1,4 @@
-package updatecheck
+package software
 
 import (
 	"errors"
