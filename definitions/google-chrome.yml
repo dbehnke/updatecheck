@@ -1,0 +1,34 @@
+version: 0
+
+software:
+  - name        : chrome-stable
+    displayname : Google Chrome
+    description : Web Browser
+    platforms:
+    - name : mac
+      rules:
+      - name: _body
+        method: scrape
+        parameters:
+          url: https://support.google.com/chrome/a/answer/7679408?hl=en
+      - name: _firstpass
+        method: rule_match
+        parameters:
+          rule: _body
+          match: .*Current Chrome version release notes.*\n.*Chrome \d{1,3}
+      - name: _current_version
+        method: rule_match
+        parameters:
+          rule: _firstpass
+          match: Chrome \d{1,3}
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _current_version
+          match: \d{1,3}
+      - name: download_url
+        method: static_string
+        parameters:
+          value: https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+      
+
