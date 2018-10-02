@@ -1,0 +1,51 @@
+version: 0
+
+software:
+  - name        : tigervnc
+    displayname : TigerVNC
+    description : TigerVNC is a high-speed version of VNC based on the RealVNC 4 and X.org code bases. 
+    platforms:
+    - name : mac
+      rules:
+      - name: _redirect_url
+        method: url_redirect
+        parameters:
+          url: https://bintray.com/tigervnc/stable/tigervnc/_latestVersion 
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _redirect_url
+          match: \d{1,3}\.\d{1,3}[\.]{0,3}\d{0,3}
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: https://bintray.com/tigervnc/stable/download_file?file_path=TigerVNC-VERSION.dmg
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
+    - name : windows
+      rules:
+      - name: _redirect_url
+        method: url_redirect
+        parameters:
+          url: https://bintray.com/tigervnc/stable/tigervnc/_latestVersion 
+      - name: current_version
+        method: rule_match
+        parameters:
+          rule: _redirect_url
+          match: \d{1,3}\.\d{1,3}[\.]{0,3}\d{0,3}
+      - name: _download_url
+        method: static_string
+        parameters:
+          value: https://bintray.com/tigervnc/stable/download_file?file_path=vncviewer-VERSION.exe
+      - name: download_url
+        method: rule_replace_rule
+        parameters:
+          rule: _download_url
+          match: VERSION
+          repl_rule: current_version
+
+
